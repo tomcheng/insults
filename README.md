@@ -12,6 +12,6 @@ npm install --save insults
 ```javascript
 import getInsult from "insults";
 
-console.log(getInsult);
+console.log(getInsult());
 // You smell like a horse.
 ```
