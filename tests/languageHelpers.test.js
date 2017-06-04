@@ -1,4 +1,10 @@
-import { ingify, addIndefiniteArticle, capitalize, pluralize, nounify } from "../src/languageHelpers";
+import {
+  ingify,
+  addIndefiniteArticle,
+  capitalize,
+  pluralize,
+  nounify
+} from "../src/languageHelpers";
 
 it("capitalizes", () => {
   expect(capitalize("foo")).toBe("Foo");

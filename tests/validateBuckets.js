@@ -5,7 +5,8 @@ const validateBuckets = buckets => {
 
   const checkForMissingBuckets = arr => {
     arr.forEach(item => {
-      const matches = (item.match(/\[.*?]/g) || []).map(m => m.replace(/[\[\]]/g, ""));
+      const matches = (item.match(/\[.*?]/g) || [])
+        .map(m => m.replace(/[\[\]]/g, ""));
 
       matches.forEach(match => {
         if (!buckets[match]) {

@@ -21,10 +21,13 @@ const buckets = {
     "between you and r{(s)[adj] [noun]}, I'd rather be r{(s)[adj] [noun]}.",
     "your [hygiene] is [atrocious][you_blank].",
     "your [body_parts] are [ugly], your [body_part] is [ugly], and you smell like (s)[smelly_noun].",
-    "you're like (s)[noun], but [dumber].",
+    "you're like (s)[noun], but [dumber]."
   ],
-  your_or_your_relatives: ["your","your [relative]'s"],
-  body_part_or_parts_are_ugly: ["[body_part] is [ugly]","[body_parts] are [ugly]"],
+  your_or_your_relatives: ["your", "your [relative]'s"],
+  body_part_or_parts_are_ugly: [
+    "[body_part] is [ugly]",
+    "[body_parts] are [ugly]"
+  ],
   bad_thing_happens_to_you: [
     "it smells like (s)[smelly_noun] on your [nice_day]",
     "[you_get] [disease]",
@@ -41,7 +44,7 @@ const buckets = {
     "someone steals your car",
     "you get a nose bleed",
     "no one remembers your birthday",
-    "you miss a mortgage payment and lose your home",
+    "you miss a mortgage payment and lose your home"
   ],
   bad_thing_happens_to_you_2: [
     "[you_get] [slapped]",
@@ -57,7 +60,7 @@ const buckets = {
     "you drop your phone",
     "you shit your pants",
     "you miss an important phone call",
-    "you get a parking ticket",
+    "you get a parking ticket"
   ],
   bad_thing_happens_to_you_3: [
     "you get [hiccups]",
@@ -72,30 +75,42 @@ const buckets = {
     "you step in [animal] [feces]",
     "you never find true love",
     "you get caught watching [animal] porn",
-    "you get arrested for fraud",
+    "you get arrested for fraud"
   ],
   animal_excrement: [
     "[animal] [excrement]",
     "fresh [animal] [excrement]",
     "a piece of [animal] [feces]",
-    "a fresh piece of [animal] [feces]",
+    "a fresh piece of [animal] [feces]"
   ],
-  racist: ["racist","nazi"],
-  knife: ["knife","knife","pitchfork","fork","syringe","stick"],
-  dirty: ["dirty","rusty","AIDS-infected"],
-  crucified: ["crucified","crucified upside-down"],
-  hanged: ["hanged","hanged for (v)[fuck] (p)[animal]"],
-  slapped: ["slapped","bitch-slapped","slapped silly","spat on"],
-  off_a_cliff: ["off a cliff","down a well","off a mountain"],
-  you_blank: ["",", you [noun]",", you [adj] [noun]"],
-  you_get: ["your [relative] gets","you get"],
-  you_smell: ["you smell","your [relative] smells", "your breath smells"],
-  you_are: ["you are","your [relative] is"],
+  racist: ["racist", "nazi"],
+  knife: ["knife", "knife", "pitchfork", "fork", "syringe", "stick"],
+  dirty: ["dirty", "rusty", "AIDS-infected"],
+  crucified: ["crucified", "crucified upside-down"],
+  hanged: ["hanged", "hanged for (v)[fuck] (p)[animal]"],
+  slapped: ["slapped", "bitch-slapped", "slapped silly", "spat on"],
+  off_a_cliff: ["off a cliff", "down a well", "off a mountain"],
+  you_blank: ["", ", you [noun]", ", you [adj] [noun]"],
+  you_get: ["your [relative] gets", "you get"],
+  you_smell: ["you smell", "your [relative] smells", "your breath smells"],
+  you_are: ["you are", "your [relative] is"],
   you_have: ["you have", "your [relative] has"],
-  your: ["your","your [relative]'s"],
-  your_face: ["you","your face","your family","you and your family"],
-  relative: ["brother","child","sister","dad","mom","grandpa","grandma","dog","cat","boyfriend","girlfriend"],
-  disease: ["AIDS","cholera","ebola","smallpox","leprosy"],
+  your: ["your", "your [relative]'s"],
+  your_face: ["you", "your face", "your family", "you and your family"],
+  relative: [
+    "brother",
+    "child",
+    "sister",
+    "dad",
+    "mom",
+    "grandpa",
+    "grandma",
+    "dog",
+    "cat",
+    "boyfriend",
+    "girlfriend"
+  ],
+  disease: ["AIDS", "cholera", "ebola", "smallpox", "leprosy"],
   hiccups: [
     "hiccups",
     "jock-itch",
@@ -106,12 +121,12 @@ const buckets = {
     "a paper cut",
     "pink eye",
     "the runs",
-    "food poisoning",
+    "food poisoning"
   ],
   adj: [
     "[compound_adj]",
     "[single_word_adj]",
-    "[single_word_adj], [compound_adj]",
+    "[single_word_adj], [compound_adj]"
   ],
   compound_adj: [
     "[penis]-sucking",
@@ -120,7 +135,7 @@ const buckets = {
     "[excrement]-stained",
     "[animal]-(v)[fuck]",
     "[disease]-ridden",
-    "[animal]-infested",
+    "[animal]-infested"
   ],
   single_word_adj: [
     "bloody",
@@ -146,7 +161,7 @@ const buckets = {
     "slack-jawed",
     "ugly",
     "vulgar",
-    "worthless",
+    "worthless"
   ],
   noun: [
     "[anatomy]",
@@ -170,16 +185,26 @@ const buckets = {
     "canker sore",
     "dildo",
     "slut",
-    "[racist]",
+    "[racist]"
   ],
-  fluid_container: ["[fluid]-[container]","[container] of [fluid]"],
-  container: ["bag","sack","bucket","bowl"],
-  buffoon: ["buffoon","moron","nincompoop","idiot","loser","dummy"],
-  anatomy: ["[penis]","[pubic_hair]","[anus]","canker","pustule","wart","ovary","tit","testicle"],
-  smelly_noun: ["[penis]","[anus]","[feces]","fart","armpit"],
-  sex_anatomy: ["[penis]","[anus]"],
-  anus: ["anus","ass","rectum","butt"],
-  penis: ["cock","dick","penis","dong"],
+  fluid_container: ["[fluid]-[container]", "[container] of [fluid]"],
+  container: ["bag", "sack", "bucket", "bowl"],
+  buffoon: ["buffoon", "moron", "nincompoop", "idiot", "loser", "dummy"],
+  anatomy: [
+    "[penis]",
+    "[pubic_hair]",
+    "[anus]",
+    "canker",
+    "pustule",
+    "wart",
+    "ovary",
+    "tit",
+    "testicle"
+  ],
+  smelly_noun: ["[penis]", "[anus]", "[feces]", "fart", "armpit"],
+  sex_anatomy: ["[penis]", "[anus]"],
+  anus: ["anus", "ass", "rectum", "butt"],
+  penis: ["cock", "dick", "penis", "dong"],
   animal: [
     "alligator",
     "ape",
@@ -203,30 +228,40 @@ const buckets = {
     "pig",
     "rat",
     "skunk",
-    "warthog",
+    "warthog"
   ],
-  fuck: ["fist","fuck","hump","molest","slap","violate"],
-  excrement: ["[feces]","[semen]","[urine]","[vomit]","douche"],
-  fluid: ["[semen]","[urine]","[vomit]","douche","diarrhea"],
-  feces: ["poop","shit","turd"],
+  fuck: ["fist", "fuck", "hump", "molest", "slap", "violate"],
+  excrement: ["[feces]", "[semen]", "[urine]", "[vomit]", "douche"],
+  fluid: ["[semen]", "[urine]", "[vomit]", "douche", "diarrhea"],
+  feces: ["poop", "shit", "turd"],
   feces_verb: ["poop", "shit"],
-  eat: ["eat","lick","sniff"],
-  semen: ["cum","jizz"],
-  guzzle: ["chug","drink","guzzle"],
-  urine: ["piss","urine"],
-  vomit: ["puke","vomit"],
-  pubic_hair: ["pube","pubic hair"],
-  raped: ["eaten","humped","violated","captured","imprisoned","enslaved"],
-  pack: ["group","family","pack","swarm"],
-  fruit: ["banana","lemon","mango","kiwi","cheese"],
-  food: ["burger","sandwich","cake","biscuit"],
-  small_object: ["[fruit]","[small_animal]"],
-  small_animal: ["rat","gerbil","hamster","kitten","insect","maggot"],
-  nice_day: ["wedding day","anniversary","birthday"],
+  eat: ["eat", "lick", "sniff"],
+  semen: ["cum", "jizz"],
+  guzzle: ["chug", "drink", "guzzle"],
+  urine: ["piss", "urine"],
+  vomit: ["puke", "vomit"],
+  pubic_hair: ["pube", "pubic hair"],
+  raped: ["eaten", "humped", "violated", "captured", "imprisoned", "enslaved"],
+  pack: ["group", "family", "pack", "swarm"],
+  fruit: ["banana", "lemon", "mango", "kiwi", "cheese"],
+  food: ["burger", "sandwich", "cake", "biscuit"],
+  small_object: ["[fruit]", "[small_animal]"],
+  small_animal: ["rat", "gerbil", "hamster", "kitten", "insect", "maggot"],
+  nice_day: ["wedding day", "anniversary", "birthday"],
   walking: ["walking", "talking"],
-  die: ["die", "fall down a set of stairs", "run into a wall", "walk into oncoming traffic"],
+  die: [
+    "die",
+    "fall down a set of stairs",
+    "run into a wall",
+    "walk into oncoming traffic"
+  ],
   fly: ["mosquito", "gnat", "bee"],
-  flies_in_your_eye: ["lands on your eye", "lands in your ear", "flies up your butt", "flies in your mouth"],
+  flies_in_your_eye: [
+    "lands on your eye",
+    "lands in your ear",
+    "flies up your butt",
+    "flies in your mouth"
+  ],
   ugly: [
     "atrocious",
     "sub-par",
@@ -237,36 +272,18 @@ const buckets = {
     "ugly",
     "gross",
     "nauseating",
-    "weird",
+    "weird"
   ],
-  body_part: [
-    "face",
-    "nose",
-    "head",
-    "beard",
-    "skin",
-    "hair",
-    "forehead",
-  ],
-  countable_body_part: [
-    "face",
-    "nose",
-    "head",
-    "beard",
-    "forehead",
-  ],
-  body_parts: [
-    "ears",
-    "eyes",
-    "arms",
-    "legs",
-    "teeth",
-    "lips",
-  ],
+  body_part: ["face", "nose", "head", "beard", "skin", "hair", "forehead"],
+  countable_body_part: ["face", "nose", "head", "beard", "forehead"],
+  body_parts: ["ears", "eyes", "arms", "legs", "teeth", "lips"],
   body_part_or_body_parts: ["[body_part]", "[body_parts]"],
-  ugly_body_part_or_parts: ["[ugly] [body_parts]", "(s)[ugly] [countable_body_part]"],
-  walk: ["walk","smell","look","sound","laugh"],
-  hate: ["hate","loathe","despise","detest"],
+  ugly_body_part_or_parts: [
+    "[ugly] [body_parts]",
+    "(s)[ugly] [countable_body_part]"
+  ],
+  walk: ["walk", "smell", "look", "sound", "laugh"],
+  hate: ["hate", "loathe", "despise", "detest"],
   doing_something_embarrassing: [
     "[feces_verb] on (p)[animal]",
     "expose yourself to children",
@@ -274,10 +291,10 @@ const buckets = {
     "bathe in [fluid]",
     "drink [animal] [urine]",
     "eat [animal] [feces]",
-    "masturbate to [animal] porn",
+    "masturbate to [animal] porn"
   ],
-  maybe_while_your_relative_watches: [""," while your [relative] [watches]"],
-  watches: ["watches","films it"],
+  maybe_while_your_relative_watches: ["", " while your [relative] [watches]"],
+  watches: ["watches", "films it"],
   certain_day: [
     "Mondays",
     "Tuesdays",
@@ -294,20 +311,16 @@ const buckets = {
     "Martin Luther King Day",
     "President's Day",
     "Memorial Day",
-    "Labour Day",
+    "Labour Day"
   ],
-  hygiene: [
-    "personal hygiene",
-    "oral hygiene",
-    "hygiene",
-  ],
+  hygiene: ["personal hygiene", "oral hygiene", "hygiene"],
   atrocious: [
     "terrible",
     "horrendous",
     "atrocious",
     "sub-par",
     "not good",
-    "disgusting",
+    "disgusting"
   ],
   dumber: [
     "dumber",
@@ -316,8 +329,8 @@ const buckets = {
     "smellier",
     "fatter",
     "grosser",
-    "worse",
-  ],
+    "worse"
+  ]
 };
 
 export default buckets;
