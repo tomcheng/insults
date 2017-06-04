@@ -55,10 +55,7 @@ function select(bucketName, buckets) {
   return parse(phrase, buckets);
 }
 
-const getInsult = (buckets = importedBuckets) => {
-  const output = select("insults", buckets).replace("'", "’");
-
-  return capitalize(output);
-};
+const getInsult = (buckets = importedBuckets) =>
+  capitalize(select("insults", buckets));
 
 export default getInsult;
