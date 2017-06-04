@@ -1,7 +1,7 @@
 # Insults
 A random insult generator.
 
-Example: https://insultinstitute.org/
+Example usage: https://insultinstitute.org/
 
 ## Installation
 ```bash
