@@ -4,7 +4,8 @@ const validateBuckets = buckets => {
   let hasMissingBucket = false;
 
   const checkForMissingBuckets = arr => {
-    arr.forEach(item => {
+    arr.forEach(i => {
+      const item = i.value || i;
       const matches = (item.match(/\[.*?]/g) || [])
         .map(m => m.replace(/[\[\]]/g, ""));
 

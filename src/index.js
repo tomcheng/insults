@@ -8,8 +8,21 @@ import {
 } from "./languageHelpers";
 
 const randomElement = arr => {
-  const index = Math.floor(Math.random() * arr.length);
-  return arr[index];
+  if (arr[0] && arr[0].weight) {
+    const totalWeight = arr.reduce((acc, curr) => acc + curr.weight, 0);
+    const rand = Math.random() * totalWeight;
+    let count = 0, index = 0;
+
+    do {
+      count += arr[index].weight;
+      index++;
+    } while (count < rand);
+
+    return arr[index - 1].value;
+  } else {
+    const index = Math.floor(Math.random() * arr.length);
+    return arr[index];
+  }
 };
 
 const replacePatternWithModifier = buckets => (_, modifier, bucketName) => {
