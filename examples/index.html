@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example Insults</title>
+</head>
+<body style="
+  margin: 0;
+  padding: 10px 40px 40px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+">
+  <h1>Example Insults</h1>
+  <div id="insults"></div>
+  <script type="text/javascript" src="../dist/index.js"></script>
+  <script>
+    var insultsEl = document.createElement("div");
+
+    for (var i = 0; i < 100; i++) {
+      var insultEl = document.createElement("div");
+      insultEl.innerText = insults.default();
+      insultsEl.appendChild(insultEl);
+    }
+
+    document.getElementById("insults").appendChild(insultsEl);
+  </script>
+</body>
+</html>
