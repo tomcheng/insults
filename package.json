@@ -11,6 +11,10 @@
   ],
   "author": "Thomas Cheng",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomcheng/insults.git"
+  },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
