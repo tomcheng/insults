@@ -3,6 +3,8 @@ A random insult generator.
 
 Example usage: https://insultinstitute.org/
 
+---
+
 ## Installation
 ```bash
 npm install --save insults
