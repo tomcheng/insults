@@ -1,8 +1,8 @@
 {
   "name": "insults",
   "version": "0.1.0",
-  "description": "A library that gives you a random insult",
-  "main": "index.js",
+  "description": "A random insult generator",
+  "main": "dist/index.js",
   "scripts": {},
   "keywords": [
     "insults",
